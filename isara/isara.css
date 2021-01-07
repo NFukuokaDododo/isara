@@ -1,0 +1,776 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    text-align: center;
+    color: black;
+    background-color: cornsilk;
+}
+
+ul {
+    list-style: none;
+}
+
+.clear {
+    clear: left;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    z-index: 10;
+    height: 100px;
+    width: 100%;
+    background-color: #fff;
+}
+
+.header-in {
+    position: relative;
+    display: flex;
+    justify-content: space-between; /* 水平両端配置 */
+    align-items: center;  
+}
+
+.header-left {
+    display: flex;
+    align-items: flex-end;
+}
+
+.header-logo {
+    width: 150px;
+    height: auto;
+}
+
+.header-right {
+    position: absolute;
+    left: 70%;
+}
+
+.header-right p {
+    color: #fff;
+    cursor: pointer;
+    padding: 11px 40px;
+    background-color: #da6b64;
+    border-radius: 25px;
+}
+
+.top {
+    padding: 70px 0;
+    text-align: center;
+    background-image: url("isara_img/main.jpg");
+    background-size: cover;
+}
+
+.center-logo {
+    width: 300px;
+    height: auto;
+}
+
+.introduction {
+    font-size: 18px;
+    color: white;
+    padding: 30px 0;
+    text-align: center;
+    background-color: #ebb94d;
+}
+
+.introduction h2 {
+    font-size: 20px;
+}
+
+code {
+    font-size: 20px;
+    color: #c7254e;
+    background-color: #f9f2f4;
+    border-radius: 4px;
+}
+
+.claim {
+    border-radius: 50px;
+    margin: 10px 80px;
+    padding: 30px 120px;
+    background-color:#da6b64;
+}
+
+.topic {
+    padding: 50px 0;
+    background-image: url("isara_img/introbottom.jpg");
+    background-size: cover;
+    position: relative;
+}
+
+.topic-text {
+    width: 800px;
+    display: inline-block;
+    padding: 30px 50px;
+    font-size: 28px;
+    font-weight: 600;
+    text-align:center;
+    position: relative;
+}
+
+.topic-text::before, .topic-text::after {
+    content:'';
+    width:50px;
+    height: 50px;
+    position: absolute;
+    display:inline-box;
+    box-sizing: border-box;
+    margin:0 auto; 
+}
+
+.topic-text::before{
+    border-top:4px solid #eab857 ;
+    border-left:4px solid #eab857 ;
+    top:0;
+    left:0;
+}
+
+.topic-text::after{
+    border-bottom:4px solid #eab857 ;
+    border-right:4px solid #eab857 ;
+    bottom:0;
+    right:0;
+}
+.topic p {
+    font-size: 20px;
+    margin-bottom: 2.4rem;
+}
+
+.topic span {
+    font-weight: bold;
+    border-bottom: 5px solid #ebb94d;
+}
+
+.about {
+    padding: 50px 0;
+}
+
+.about p {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.skills-wrapper {
+    margin: 0 5%;
+    padding: 0 30px;
+    background-color: white;
+    border: 2px solid #ebb94d;
+}
+
+.skills {
+    margin: 0 15%;
+    padding: 30px 0;
+}
+
+.skill {
+    float: left;
+    width: 20%;
+}
+
+.skill p {
+    font-size: 12px;
+    font-weight: 300;
+}
+
+.about-second {
+    padding-top: 50px;
+    padding-bottom: 70px;
+    background-image: url("isara_img/aboutsecondbg.jpg");
+    background-size: cover;
+}
+
+.about-second span {
+    color :#ebb94d;
+}
+
+.about-second h1 {
+    padding: 30px 0;
+    font-size: 28px;
+    color: white;
+}
+
+.about-second h2 {
+    padding-bottom: 15px;
+    font-size: 20px;
+    color: white;
+}
+
+.step {
+    display: inline-block;
+    border-radius: 5px;
+    width: 29%;
+    background-color: white;
+}
+
+.step-top {
+    color: white;
+    background-color: #ebb94d;
+    margin: 20px auto;
+    font-size: 16px;
+    font-weight: 600;
+    width: 80%;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.step-middle {
+    font-size: 14px;
+    font-weight: 600;
+    padding-bottom: 20px;
+}
+
+.step-bottom {
+    font-size: 16px;
+    font-weight: 600;
+    padding-bottom: 30px;
+}
+
+.about-third {
+    background-color: #016ea9;
+    color: white;
+    padding: 40px 0;
+}
+.about-third span {
+    color: #ebb94d;
+}
+
+.about-four {
+    padding: 50px 0;
+    background-color: white;
+}
+
+.about-four p {
+    font-size: 20px;
+}
+
+.skills-second {
+    margin: 0 auto;
+    padding: 40px 0;
+}
+
+.about-four img {
+    box-sizing: border-box;
+    width: 20%;
+    padding: 0 15px;
+}
+
+.about-five {
+    padding: 50px 0;
+}
+
+.topic-text h2 {
+    font-size: 20px;
+}
+
+.topic-text h1 {
+    font-size: 28px;
+}
+
+.merits {
+    padding: 50px 0;
+}
+
+.merit {
+    text-align: left;
+    display: inline-block;
+    vertical-align: top;
+    width: 26%;
+}
+
+.merit h2 {
+    font-size: 20px;
+    color: #ebb94d;
+}
+
+.merit p {
+    font-size: 16px;
+}
+
+.support-first {
+    padding: 30px 0;
+    margin: 30px 5%;
+    border: 2px solid #ebb94d;
+    border-radius: 5px;
+    background-color: white;
+}
+
+.support-first h1 {
+    color:  #ebb94d;
+}
+
+.support-first h2 {
+    padding: 20px 0;
+}
+
+.support-first p {
+    font-weight: 600;
+    font-size: 16px;
+    color: black;
+    
+}
+
+.member {
+    color: white;
+    background-image: url("isara_img/teacherbg.jpg");
+    padding: 50px 0;
+    height: 700px;
+}
+
+.member h1 {
+    font-size: 28px;
+    padding: 30px 0;
+}
+
+.engineers {
+    text-align: center;
+    position: relative;
+}
+
+.engineer {
+    position: absolute;
+    top: 200px;
+    display: inline-block;
+    width: 25%;
+    vertical-align: top;
+    position: relative;
+    margin: 0 20px;
+}
+
+.engineer img {
+    border-radius: 50%;
+    position: absolute;
+    top: -160px;
+    right: 15%;
+}
+
+.engineer p {
+    font-size: 16px;
+}
+
+.profile {
+    border: 3px solid #fff;
+    padding: 30px 20px;
+}
+
+.qa {
+    background-color:  #ebb94d;
+    padding: 40px 0;
+}
+
+.qa h1 {
+    color: #fff;
+}
+
+.qa-topic-text::before{
+    border-top:4px solid #fff ;
+    border-left:4px solid #fff ;
+}
+
+.qa-topic-text::after{
+    border-bottom:4px solid #fff ;
+    border-right:4px solid #fff ;
+}
+
+.qa-p{
+    background-color: #fff;
+    margin: 0 auto;
+    height: 80px;
+    width: 80px;
+    line-height: 80px;
+    border-radius: 50%;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    text-align: center;
+    color: #ebb94d;
+}
+
+.triangle{
+    width:0;
+    border-top: 30px solid #eab857;
+    border-right: 30px solid transparent;
+    border-left: 30px solid transparent;
+    margin:0 auto;
+    background-color: #fff;
+  }
+
+.triangle-cover {
+    background-color: #fff;
+}
+  
+.answers {
+    background-color: white;
+    padding-top: 20px;
+    padding-bottom: 40px;
+}
+
+.answers h1 {
+    margin-bottom: 15px;
+}
+
+.answers h4 {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.answer {
+    display: flex;
+    margin: 0 20%;
+    padding: 20px 0;
+}
+
+.answer img {
+    border: 3px #eab857 solid;
+}
+
+.answer p {
+    color: #777777;
+    font-size: 18px;
+    text-align: left;
+    padding-left: 30px;
+    padding-top: 15px;
+}
+
+.answer span {
+    font-size: 16px;
+    font-style: italic;
+    border-bottom: 1px solid #777777;
+}
+
+.about-six {
+    background-image: url("isara_img/classbg.jpg");
+    padding: 50px 0;
+}
+
+.about-six-text {
+    color: #fff;
+}
+
+.study {
+    width: 30%;
+    display: inline-block;
+    border: 2px solid #016ea9;
+    border-radius: 2px;
+    margin: 0 15px;
+    vertical-align: top;
+}
+
+.study h1 {
+    font-size: 20px;
+    color: white;
+    background-color:#016ea9;
+    padding: 15px 0;
+}
+
+.study h2 {
+    font-size: 16px;
+    background-color: white;
+    padding: 15px 0;
+    border-bottom: 1px dotted gray;
+}
+
+.study-bottom {
+    border-bottom: hidden;
+}
+
+.support {
+    background-color: #016ea9;
+    border: #016ea9;
+    font-weight: 600;
+}
+
+.support p {
+    color: white;
+    font-size: 20px;
+    padding: 40px 0;
+}
+
+.about-seven {
+    background-color: white;
+    padding-bottom: 30px;
+}
+
+.float {
+    padding-top: 50px;
+    padding-bottom: 30px;
+}
+
+.float h1 {
+    margin-bottom: 50px;
+}
+
+.flow-wrapper {
+    padding: 10px 35px;
+    margin: 0 5%;
+    display: flex;
+    background-color: #fef5e0;
+}
+
+.flow-wrapper p {
+    font-size: 14px;
+}
+
+.flow-wrapper h2 {
+    font-size: 16px;
+}
+
+.flow {
+    padding: 0px 60px;
+    flex: 0 0 150px;
+}
+
+.flow img {
+    width: 65%;
+}
+
+.flow h2 {
+    font-size: 18px;
+}
+
+.flow-text {
+    text-align: left;
+}
+
+.flow-text h2 {
+    font-size: 16px;
+    margin: 10px 0;
+}
+
+.flow-text p {
+    margin: 10px 0;
+}
+
+.bangkok {
+    background-image: url("isara_img/bangkokbg.jpg");
+    background-size: cover;
+}
+
+.bangkok p {
+    margin-bottom: 10px;
+}
+
+.bangkok-text {
+    color: white;
+    text-align: left;
+    padding: 80px;
+}
+
+.bangkok h1 {
+    margin: 20px 0;
+}
+
+.bangkok-reason {
+    font-size: 16px;
+}
+
+.about-eight {
+    background-color: #ebb94d;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.about-eight h1 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.about-eight p {
+    font-size: 16px;
+    font-weight: 600;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.about-eight span {
+    color: white;
+}
+
+.benefits-wrapper {
+    padding: 30px 0;
+    margin: 0 5%;
+    border: 2px solid white;
+}
+
+.benefit-box {
+    margin: 0 40px;
+    display: inline-block;
+}
+
+.benefit {
+    background-color: white;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.benefit h2 {
+    color: #ebb94d;
+}
+
+.benefit p {
+    font-size: 14px;
+}
+
+.about-nine {
+    padding: 40px 0;
+    background-image: url("isara_img/specialdetail.jpg");
+    background-size: cover;
+    color: white;
+}
+
+.about-nine h2 {
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+.topic-text-third {
+    width: 800px;
+    display: inline-block;
+    padding: 30px 50px;
+    font-size: 28px;
+    font-weight: 600;
+    text-align:center;
+    position: relative;
+}
+
+.topic-text-third::before, .topic-text-third::after {
+    content:'';
+    width:50px;
+    height: 50px;
+    position: absolute;
+    display:inline-box;
+    box-sizing: border-box;
+    margin:0 auto; 
+}
+
+.topic-text-third::before{
+    border-top:4px solid #fff ;
+    border-left:4px solid #fff ;
+    top:0;
+    left:0;
+}
+
+.topic-text-third::after{
+    border-bottom:4px solid #fff ;
+    border-right:4px solid #fff ;
+    bottom:0;
+    right:0;
+}
+
+.about-ten {
+    background-color: white;
+    padding: 30px 0;
+}
+
+.about-ten h1 {
+    font-size: 28px;
+    margin: 10px 0;
+}
+
+.about-ten h2 {
+    font-size: 20px;
+    margin: 20px 0;
+}
+
+.someya {
+    display: flex;
+    margin: 0 15%;
+}
+
+.someya img {
+    padding: 0 20px;
+}
+
+.someya p {
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.someya-text {
+    text-align: left;
+}
+
+.form {
+    background-color:  #ebb94d;
+    padding: 30px 0;
+}
+
+.form h1 {
+    margin: 20px 0;
+}
+
+.form h2 {
+    margin-bottom: 20px;
+}
+
+.form input {
+    width: 70%;
+    padding: 5px;
+    height: 55px;
+    border-radius: 5px;
+    border: none;
+    margin-bottom: 40px;
+}
+
+.form textarea {
+    width: 70%;
+    height: 80px;
+    padding: 5px;
+    height: 55px;
+    border-radius: 5px;
+    border: none;
+    margin: 20px 0;
+}
+
+.form .submit-button {
+    width: 70%;
+    background-color: #da6b64;
+    color: white;
+    font-size: 23px;
+    border-radius: 50px;
+    border: none;
+    font-weight: 600;
+    margin: 30px 0;
+}
+
+.questions {
+    background-color: white;
+    text-align: center;
+    padding: 40px 0;
+}
+
+.questions-text {
+    margin: 20px 0;
+}
+
+.question-and-answer {
+    margin: 0 10%;
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+.questions .question-and-answer .question {
+    font-size: 20px;
+    padding: 15px;
+    border: 1px solid #e5e5e5;
+}
+
+.questions .question-and-answer .qa-answer {
+    font-size: 16px;
+    padding: 15px;
+    border-bottom: 1px solid #e5e5e5;
+    display: none;
+    font-weight: 600;
+}
+
+footer {
+    background-color: #ececec;
+}
+
+footer p {
+    font-size: 10px;
+}
